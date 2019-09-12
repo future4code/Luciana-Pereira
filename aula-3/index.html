@@ -1,42 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="estoque.html" type="text">
+    <link href="home.html" type="text">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+   
+    <!--Mensagem de boas vindas-->
+    <script type="text/javascript">
+        alert("Seja bem vindo a Mega Loja!");
+    </script>
+
+    <title>Mega Loja</title>
 </head>
 
 <body>
-    <header>
-        <img src="images.png">
-        <hr>
-    </header>
-    <main>
-        <article>
-            <p>
-                Bem-vindo(a) a <strong>GM</strong> !<br>
-
-                A empresa foi criada para a execução dos serviços técnicos de instalação de equipamentos e acessórios,
-                com o intuito de atender as necessidades e as espectativas dos nossos clientes em nível nacional.
-                Nosso trabalho se baseia em um atendimento de qualidade do inicio ao fim, seja no esclarecimento de
-                dúvidas sobre o equipamento e o serviço executado ou orientação de utilização do produto.
-                Nosso objetivo e suprir a carência de mão de obra técnica que há na Capital (São Paulo) e nos demais
-                estados. Somos a unica empresa do ramo pronta e preparada para atende lo(a).<br><br>
-                Venha conhecer nosso trabalho!
-            </p>
-        </article>
-        <section>
-            <header>
-                <h3>Sede GM</h3>
+    <!--Cabeçalho-->
+        <header>
+                <center>
+                        <img class="banner_img" src="megaloja.jpg" alt="logo Mega Loja">
+                </center>
             </header>
-            <ol>
-               <img src="sede.png">
-            </ol>
+
+    <!--Descrição da loja e links direto-->
+    <section class="bodyPage">
+        <section class="banner">
+            <div class="banner-menu">  
+    
+                <!--Barra de menus-->
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html" target="_blank"><b>Pagina Inicial</b></a> </li>
+                        <li><a href="estoque.html" target="_blank"><b>Controle de Estoque</b></a></li>
+                        <li><a href="func.html" target="_blank"><b>Lista de Funcionarios</b></a></li>
+                    </ul>
+                </nav>
+            </div>
         </section>
 
-    </main>
+        <!--Conteudo do corpo de inicio-->
+        <section class="sobre">
+            <p><strong>Olá! Seja bem vindo !</strong> Este sistema foi feito unico, e exclusisavemente para uso interno de funcionarios autorizados da empresa Mega Loja.<br>
+            Para acesso ao sistema, clique no menu acima<br><br>
+                Duvidas contate nosso suporte no e-mail suporte.ti@megaloja.com
+            </p>
+        </section>
+        
+        <!--Footer-->
+        <footer>
+            <p><strong>Copyright - 2019 by Lu Pereira</strong><i class="em em-female-technologist"></i></p>
+        </footer>
+
 </body>
 
 </html>
