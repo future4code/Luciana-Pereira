@@ -1,6 +1,12 @@
-#{
+# {
     box-sizing: border-box;
- } header {
+ }
+
+ body {
+   margin: 0 auto;
+ }
+ 
+ header {
   background: darkslateblue;
   color: aliceblue;
 }
@@ -66,4 +72,11 @@ footer {
   background: blueviolet;
   color: white;
   margin: 0;
+}
+
+footer img {
+ max-width: 100px;
+ background-repeat: no-repeat;
+ text-align: left;
+ border-radius: 5rem;
 }
