@@ -1,0 +1,121 @@
+# {
+    box-sizing: border-box;
+}
+
+
+
+header{
+    background-color: dimgray;
+    align-items: center;
+    color: white;
+    height: 50px;
+    justify-content: space-between;
+    display: flex;
+    font-family: calibri;
+
+    padding: 0 10px;
+}
+
+.logo {
+    color: black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    flex-grow: 1;
+    grid-auto-rows: 1fr 1fr;
+    
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    flex-grow: 1;
+    grid-auto-rows: 1fr 1fr;
+
+}
+
+.menu {
+    grid-row: 1 / 3;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.img1 {
+    width: 60%;
+    height: 800%;
+}
+
+.img2 {
+    width: 50%;
+    height: 50%;
+}
+
+.img3 {
+    width: 30%;
+    height: 50%;
+}
+
+.img4 {
+    width: 30%;
+    height: 50%;
+}
+
+.img5 {
+    width: 30%;
+    height: 50%;
+}
+
+
+.img6 {
+    width: 30%;
+    height: 50%;
+}
+
+
+.img7 {
+    width: 30%;
+    height: 50%;
+}
+
+.img8 {
+    width: 30%;
+    height: 50%;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.item p {
+    padding: 10px;
+}
+
+.item {
+    height: 200px;
+    align-items: center;
+    border: 1px solid black;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto 50px;
+
+}
+
+footer {
+    background-color: dimgray;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    color:white;
+    text-align: center;
+
+}
