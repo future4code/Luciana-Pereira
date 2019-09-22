@@ -12,3 +12,11 @@ prompt("A Casa está destrancada?" + " " + estaDestrancada)
  //Está chovendo?
  //Tem guarda-chuva?
  //Imprima a resposta da pergunta "O usuário vai se molhar?"
+
+ function exe3b (){
+     const estaChovendo = confirm("Esta chovendo ?");
+     const temGuardaChuva = confirm("Tem guarda chuva?");
+     const vouMeMolhar = estaChovendo && !temGuardaChuva;
+
+     console.log("Vou me molhar:", vouMeMolhar);
+ }

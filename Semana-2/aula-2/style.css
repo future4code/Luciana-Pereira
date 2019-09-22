@@ -1,0 +1,170 @@
+# {
+    box-sizing: border-box;
+}
+
+.menu {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    height: 60px;
+    margin: 0;
+}
+
+.primeira {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column: -1/-2;
+    grid-gap: 10px;
+}
+
+.segunda {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.terceira {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.esquerdo {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 /-1;
+    position: relative;
+    grid-template-rows: 6;
+}
+
+.item1esquerdo{
+    background: blue;
+    height: 100px;
+    margin: 20px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.item2centro{
+    background: yellow;
+    height: 100px;
+    margin: 20px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.item3direito{
+    background: green;
+    height: 100px;
+    margin: 20px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.item4esquerdo{
+    background: blue;
+    height: 100px;
+    margin: 20px;
+    padding-top: 100px;
+    text-align: center;
+}
+.item5centro {
+    background: yellow;
+    height: 100px;
+    margin: 20px;
+    padding-top: 100px;
+    text-align: center;
+}
+.item6direito {
+    background: green;
+    height: 100px;
+    margin: 20px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.item7direito {
+    background: black;
+    color: white;
+    height: 200px;
+    margin: 20px;
+    padding-top: 200px;
+    text-align: center;
+}
+.item8esquerdo {
+    background: black;
+    color: white;
+    height: 200px;
+    margin: 20px;
+    padding-top: 200px;
+    text-align: center;
+}
+
+.quarta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.item9esquerdo {
+    background: white;
+    color: black;
+    height: 100px;
+    margin: 20px;
+    padding-top: 100px;
+    text-align: center;
+    border:1px solid black;
+}
+.item10centro {
+    background: white;
+    color: black;
+    height: 100px;
+    margin: 20px;
+    padding-top: 100px;
+    text-align: center;
+    border:1px solid black;
+}
+
+.item11direito{
+    background: white;
+    color: black;
+    height: 100px;
+    margin: 20px;
+    padding-top: 100px;
+    text-align: center;
+    border:1px solid black;
+   
+}
+
+@media (max-width:500px) {
+
+    .menu {
+        display: grid;
+                grid-template-columns: 1fr;
+                grid-column: 1 / -1;
+    }
+    .item1esquerdo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1 / 1;
+
+    }
+    .item2centro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: 2 / 2;
+    }
+
+            .item3direito {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-column: 1 / -1;
+                
+            }
+         
+            
+
+
+}
