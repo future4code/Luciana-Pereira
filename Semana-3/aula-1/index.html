@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Lista De Tarefas</title>
+    <script>
+        function criarTarefa() {
+            let valorDoInput = document.getElementsByClassName("lista").value
+
+            
+
+            let listasDeTarefas = document.querySelector("ul");
+
+            let novaTarefa = document.createElement("li");
+
+            
+            novaTarefa.innerHTML = valorDoInput;
+
+            listasDeTarefas.append(novaTarefa);
+
+            document.querySelector("input").value = "";
+        }
+
+       function myFunction () {
+        let valorDoInput = document.getElementById ("hora", "lista").value
+
+        let listasDeTarefas = document.querySelector("ul");
+
+let novaTarefa = document.createElement("li");
+
+
+novaTarefa.innerHTML = valorDoInput;
+
+listasDeTarefas.append(novaTarefa);
+
+document.querySelector("hora", "lista").value = "";
+    
+       }
+
+        function checkEnter(event) {
+            if (event.key === "Enter") {
+                criarTarefa();
+            }
+        }
+
+        
+
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Minha Semana - Lista de Tarefas</h1>
+            <input type="text" class="lista + hora" placeholder="Digite sua tarefa">
+            <input type="time" class="lista" placeholder="Digite o horario da tarefa">
+            <select>
+                <option value="segunda">Segunda</option>
+                <option value="terça">Terça</option>
+                <option value="quarta">Quarta</option>
+                <option value="quinta">Quinta</option>
+                <option value="sexta">Sexta</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+            </select>
+            <button ionclick="criarTarefa();">Enviar</button>
+        </header>
+
+        <div class="item1">
+            <div class="item-s" id="segunda">
+                <h2>Segunda</h2>
+                <ul>
+
+                </ul>
+
+            </div>
+            <div class="item-t" id="terça">
+                <h2>Terça</h2>
+                <ul>
+
+                </ul>
+            </div>
+            <div class="item-qa" id="quarta">
+                <h2>Quarta</h2>
+                <ul>
+
+                </ul>
+            </div>
+            <div class="item-qi" id="quinta">
+                <h2>Quinta</h2>
+                <ul>
+
+                </ul>
+            </div>
+            <div class="item-se" id="sexta">
+                <h2>Sexta</h2>
+                <ul>
+
+                </ul>
+            </div>
+            <div class="item-sa" id="sabado">
+                <h2>Sabado</h2>
+                <ul>
+
+                </ul>
+            </div>
+            <div class="item-d" id="domingo">
+                <h2>Domingo</h2>
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>Copyright - 2019</footer>
+</body>
+
+</html>
