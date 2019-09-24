@@ -1,0 +1,48 @@
+## Exercício da tarde
+
+Hoje o objetivo é construir um sistema interno de uma loja usando somente HTML,
+ **sem CSS ou 
+JavaScript**. Vocês deverão escolher livremente os produtos e o nome da loja.
+ O sistema deverá 
+ter no mínimo as seguintes páginas:
+
+- **Página inicial:** Essa página terá o nome da empresa, uma mensagem de boas vindas, e um menu com
+ links para outras páginas.
+
+- **Controle de estoque**: Essa página deve ter uma **tabela** com os produtos 
+da loja, mostrando uma 
+foto, uma descrição, o preço e a quantidade disponível.
+
+- **Adicionar produto**: Essa página deve conter um **formulário** para adicionar produtos. Ele deve 
+ter os mesmos campos que aparecem no controle de estoque. Os dados do formulário devem ser enviados 
+para a página [http://soter.ninja/form-viewer/](http://soter.ninja/form-viewer/) (Como é só HTML não 
+será possível criar novos produtos de verdade, essa página acima permite que você veja os valores 
+enviados pelo formulário só para conferir que está tudo certo)
+
+- **Funcionários**: Essa página deve mostrar uma lista dos funcionários, com o nome em negrito e a 
+data de nascimento de cada um.
+
+O enunciado de hoje é bem aberto e várias resoluções são possíveis. Os requisitos descritos acima são
+ **mínimos,** portanto, sintam-se livres para colocar mais coisas se quiserem. Não se limitem aos 
+ elementos mostrados em aula. Os materiais de referência colocados aqui e disponíveis na internet 
+ possuem muitos outros elementos interessantes! **Sejam criativos e divirtam-se!**
+
+ @canal IMPORTANTE Esqueci de falar uma coisa:
+Vocês devem fazer o projeto de hoje em uma branch diferente da master!
+Pra quem já começou, não tem problema, desde que vocês não tenham dado nenhum commit ainda. É só criar uma nova branch 
+e seguir dai.
+Isso é muito importante, pq no final vocês devem abrir um PR (Pull Request) pra master, que será a forma que teremos de
+ avaliar e corrigir o código de vocês.
+
+
+Qualquer dúvida sobre algum dos passos descritos acima, podem vir falar com a gente!
+Lembrem de usar as ferramentas do git pra ir mantendo o versionamento do código de vocês, ou seja, quando finalizar alguma
+ parte do exercício e estiver funcionando, é sempre bom ir dando um commit pra guardar essas alterações. O push só precisa 
+ ser dado no final, quando vocês forem de fato subir isso pro GitHub
+
+
+@canal IMPORTANTE-2 Ontem sugerimos que vocês criassem um repositório novo por semana, mas reavaliamos e achamos que vai 
+ser melhor que vocês tenham um repositório só pra cada um que vão criando pastas pra cada semana, seguindo essa estrutura:
+
+O nome do aluno vai ser o repositório em si, pedimos pra que vocês renomeiem o da semana 0 para o nome de vocês
+e apaguem o repositório da semana 1, para quem criou
