@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Inscritos Future4</title>
     <script>
-        function salvaItem( ) {
-  if(item && chave) {
-    window.localStorage.setItem(nome, idade, email, JSON.stringify(item));
-  }
-} 
+        const listaDeInscritos = buscaItem('inscritosF4');
+
+        const container = document.querySelector('.container');
+
+        for (let Inscritos of listaDeInscritos) {
+            container.innerHTML += '<div>' +
+                '<p> Nome: ' + inscrito.nome + '</p>' +
+                '<p> Idade: ' + inscrito.idade + '</p>' +
+                '<p> Email: ' + inscrito.email + '</p>' +
+                '</div>'
+        }
+        function buscaItem(chave) {
+            const valor = window.localStorage.getItem(chave);
+            if (valor) {
+                return JSON.parse(valor)
+            }
+            return []
+        }
+
     </script>
 </head>
+
 <body>
     <div class="">
         <h1>Inscritos Future4</h1>
-        <div></div>
+        <div class="container">
+
+        </div>
         <button><a href="index.html" target="_blank">Voltar</a></button>
-    </div>
-    
+
 </body>
+
 </html>
