@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Document</title>
+    <script>
+        function cadastrarDespesa(){
+    let valorDoInput = document.getElementsByClassName("lista").value
+
+    let listaDeDespesas = document.querySelector("ul");
+    let novaDespesa = document.createElement("li");
+
+    novaDespesa.innerHTML = valorDoInput;
+
+    listaDeDespesas.append(novaDespesa);
+
+    document.querySelector("input").value = "";
+
+    
+    
+   /*lert("Campo abaixo esta em branco! Por favor preencha antes de realizar o cadastro.")*/
+    }
+}
+
+function limparCampos(){
+    document.getElementById("valor").value = "";
+    document.getElementById("descricao").value = "";
+}
+
+function limparFiltro() {
+    document.getElementById("valorMin").value = "";
+    document.getElementById("valorMax").value = "";
+}
+
+
+
+if (input =="" ){
+    alert("Campo abaixo esta em branco! Por favor preencha antes de realizar o cadastro.")
+}
+    </script>
+    
+</head>
+<body>
+    <header>Controlador de Despesas</header>
+    <section class="container">
+    <!--Primeira Coluna-->
+    <section class="container-1">
+        <h2>Cadastro de Despesas</h2>
+        <div>
+            <div>
+            <label>valor</label>
+            <input type="number" placeholder="Coloque aqui o valor" id="valor" >
+        </div>
+        <div>
+                <label>Tipo</label>
+                <select>
+                        <option value="casa">Casa</option>
+                        <option value="viagem">Viagem</option>
+                        <option value="automoveis">Automoveis</option>
+                        <option value="outros">Outros</option>
+                </select>
+
+            </div>
+            <div>
+                <label>Descrição</label><br>
+                <textarea id="descricao"  placeholder="Coloque aqui sua descricao"></textarea>
+            </div>
+        </div>
+        <button type="submit" onclick="limparCampos();">Cadastrar Despesa</button>
+    </section>
+
+    <!--Segunda Coluna-->
+    <section class="container-2">
+        <h2>Despesas Detalhadas</h2>
+        <div>
+            <div>
+                    <label>Tipo</label>
+                    <select>
+                        <option value="casa">Casa</option>
+                        <option value="viagem">Viagem</option>
+                        <option value="automoveis">Automoveis</option>
+                        <option value="outros">Outros</option>
+                    </select>
+            </div>
+            <div>
+                <label>Valor Minimo</label>
+                <input type="number" placeholder="Coloque aqui o valor Minimo" id="valorMin"> 
+            </div>
+            <div>
+                    <label>Valor Máximo</label>
+                    <input type="number" placeholder="Coloque aqui o valor Máximo" id="valorMax"> 
+                </div>
+        </div>
+        <button>Filtrar</button>
+        <button onclick="limparFiltro();">Limpar filtro</button>
+        <section class="listaDeDespesas">
+            <ul>
+
+            </ul>
+        </section>
+
+    </section>
+
+        <!--Terceira Coluna-->
+
+    <section class="container-3">
+        <h2>Extrato</h2>
+
+    </section>
+    </section>
+    
+</body>
+</html>
