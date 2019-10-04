@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    font-family: calibri;
+}
+
+header{
+    background-color: blue;
+    color:white;
+    font-size: 20px;
+    font-family: calibri;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+    border: 1px solid black;
+    margin: 10px 0px;
+    padding: 5px 10px;
+}
