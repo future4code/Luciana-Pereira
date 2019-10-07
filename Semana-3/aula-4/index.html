@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,43 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="java.js" type="text/js">
     <title>Document</title>
     <script>
         function cadastrarDespesa(){
-    let valorDoInput = document.getElementsByClassName("lista").value
+            let valorDoInput = document.getElementsByClassName("lista").value
 
-    let listaDeDespesas = document.querySelector("ul");
-    let novaDespesa = document.createElement("li");
+            let listaDeDespesas = document.querySelector("ul");
+            let novaDespesa = document.createElement("li");
 
-    novaDespesa.innerHTML = valorDoInput;
+            novaDespesa.innerHTML = valorDoInput;
 
-    listaDeDespesas.append(novaDespesa);
+            listaDeDespesas.append(novaDespesa);
 
-    document.querySelector("input").value = "";
+            document.querySelector("input").value = "";
+        }
 
-    
-    
-   /*lert("Campo abaixo esta em branco! Por favor preencha antes de realizar o cadastro.")*/
-    }
-}
-
-function limparCampos(){
-    document.getElementById("valor").value = "";
-    document.getElementById("descricao").value = "";
-}
-
-function limparFiltro() {
-    document.getElementById("valorMin").value = "";
-    document.getElementById("valorMax").value = "";
-}
-
-
-
-if (input =="" ){
-    alert("Campo abaixo esta em branco! Por favor preencha antes de realizar o cadastro.")
-}
     </script>
-    
 </head>
 <body>
     <header>Controlador de Despesas</header>
@@ -52,7 +33,7 @@ if (input =="" ){
         <div>
             <div>
             <label>valor</label>
-            <input type="number" placeholder="Coloque aqui o valor" id="valor" >
+            <input type="number" placeholder="Coloque aqui o valor" id="" name="">
         </div>
         <div>
                 <label>Tipo</label>
@@ -66,10 +47,10 @@ if (input =="" ){
             </div>
             <div>
                 <label>Descrição</label><br>
-                <textarea id="descricao"  placeholder="Coloque aqui sua descricao"></textarea>
+                <textarea class="descricao" id="descricao" nome="descricao" placeholder="Coloque aqui sua descricao"></textarea>
             </div>
         </div>
-        <button type="submit" onclick="limparCampos();">Cadastrar Despesa</button>
+        <button onclick="cadastrarDespesa();">Cadastrar Despesa</button>
     </section>
 
     <!--Segunda Coluna-->
@@ -87,15 +68,15 @@ if (input =="" ){
             </div>
             <div>
                 <label>Valor Minimo</label>
-                <input type="number" placeholder="Coloque aqui o valor Minimo" id="valorMin"> 
+                <input type="number" placeholder="Coloque aqui o valor Minimo" id=""> 
             </div>
             <div>
                     <label>Valor Máximo</label>
-                    <input type="number" placeholder="Coloque aqui o valor Máximo" id="valorMax"> 
+                    <input type="number" placeholder="Coloque aqui o valor Máximo" id=""> 
                 </div>
         </div>
         <button>Filtrar</button>
-        <button onclick="limparFiltro();">Limpar filtro</button>
+        <button>Limpar filtro</button>
         <section class="listaDeDespesas">
             <ul>
 
