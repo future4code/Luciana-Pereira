@@ -1,3 +1,4 @@
+
 alert("Seja bem vindo ao Blog Devs")
 
 class Post {
@@ -24,4 +25,5 @@ const coletaniaDePosts = document.getElementById("coletaniaDePosts");
 for (let postagens of posts ) {
     coletaniaDePosts.innerHTML += "<li>" + postagens.buscaPost() + "</li>";
     coletaniaDePosts.innerHTML += "<img src='" + postagens.urlDaCapaPost + "'>";
+
 }
