@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {render} from 'react-dom';
 import styled from 'styled-components'
 import './App.css';
 
@@ -15,11 +14,11 @@ texto: ${props => props.texto};
 
 
 class App extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
       listaDeItens: [],
-             texto:""
+        texto:""
       
     };
   }

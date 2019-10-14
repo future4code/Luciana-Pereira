@@ -5,11 +5,15 @@ const ContainerPostComent= styled.div`
 border: 1px solid darkgray;
 `
 
-export function PostComentario(){
+export function PostComent(props){
     return(
         <ContainerPostComent>
-
+             
         </ContainerPostComent>
 
     );
 }
+
+
+
+

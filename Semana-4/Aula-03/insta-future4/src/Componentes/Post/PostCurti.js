@@ -1,13 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+
 const ContainerPostCurtida= styled.div`
+
 `
 
-export function PostComentario(){
+export function PostCurti(){
     return(
-        <ContainerPostCurtida>
-            
-        </ContainerPostCurtida>
+        <ContainerPostCurti>
+        </ContainerPostCurti>
 
     );
 }

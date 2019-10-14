@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import './App.css'; 
-import Foto from './Componentes/Container/Container';
+import ItemContainer from './Components/ItemContainer/itemContainer';
 import PropTypes from 'prop-types';
+import styled from 'styled-components'
 
 
 
@@ -18,9 +19,9 @@ class App extends Component {
 
     return(
     <div className="App">
-      <Container {...imagemPerfil}/>
-      <Container {...imagemPerfil}/>
-      <Container {...imagemPerfil}/>
+      <ItemContainer {...imagemPerfil}/>
+      <ItemContainer {...imagemPerfil}/>
+      <ItemContainer {...imagemPerfil}/>
     </div>
     );
   }

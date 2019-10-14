@@ -6,6 +6,7 @@ display: flex;
 flex-direction: row;
 height: 20px;
 padding:16px;
+border: 1px solid black;
 `
 const FotoPerfil = styled.div`
 align-self: center;
@@ -40,21 +41,10 @@ transform: translate(-6px, 5px);
 align-self: center;
 `
 
-export function PostComentario(){
+export function PostComentario(props){
     return(
         <ContainerPostPerfil>
-            <FotoPerfil>
-                <ContNome/>
-                <span>
-                    <img src={props.usuario.imagem}/>
-                </span>
-            </FotoPerfil>
-            <NomePerfil>
-                <p href="">{props.usuario.nome}</p>
-            </NomePerfil>
-            <ContainerImg>
-            <imagemPost src={props.src}/>
-            </ContainerImg>
+          
         </ContainerPostPerfil>
 
     );

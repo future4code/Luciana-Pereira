@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import
 
 
 class Etapa2 extends Component {
@@ -9,7 +10,7 @@ class Etapa2 extends Component {
 
     <p>1. Qual o curso ?</p>
       <input/>
-      <p>1. Qual unidade de Ensino ?</p>
+      <p>2. Qual unidade de Ensino ?</p>
       <input/>
       <button>Continuar</button>
       </form>
