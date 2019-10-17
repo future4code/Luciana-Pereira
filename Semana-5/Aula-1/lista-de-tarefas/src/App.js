@@ -4,8 +4,6 @@ import './App.css';
 
 const DContainer = styled.div `
 color: black;
-ite
-
 `
 
 const ItemDaLista = styled.li`

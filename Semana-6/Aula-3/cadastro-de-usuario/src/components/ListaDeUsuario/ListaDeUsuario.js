@@ -3,9 +3,15 @@ import styled from 'styled-components'
 import axios from 'axios';
 
 const ListaContainer = styled.div`
-border:1px solid black;
+border:2px solid black;
+margin: 10px 100px 10px 100px;
+padding: 10px;
+background-color: darkgray;
 `
-  
+const ItemListaContainer = styled.div`
+display:flex;
+justify-content: space-between;
+`
 
 class ListaDeUsuario extends React.Component {
     constructor(props) {
@@ -36,6 +42,9 @@ class ListaDeUsuario extends React.Component {
     }
 
     deletarUsuario = (id) => {
+    {
+    const ask = alert("Tem certeza que deseja deletar")
+    if (ask == true) {
         axios.delete(
             `https://us-central1-future4-users.cloudfunctions.net/api/users/deleteUser?id=${id}`,
             {
@@ -47,6 +56,8 @@ class ListaDeUsuario extends React.Component {
             this.reqUsuario ()
         })
     }
+}
+    }
 
     
     render(){
@@ -56,10 +67,10 @@ class ListaDeUsuario extends React.Component {
                 {
                   this.state.lista.map((usuario, i) => {
                       return (
-                          <div key={i}>
+                          <ItemListaContainer key={i}>
                               <p>{usuario.name}</p>
                               <p onClick={ () => this.deletarUsuario (usuario.id)}> X </p>
-                          </div>
+                          </ItemListaContainer>
                       )
                   })
                 }

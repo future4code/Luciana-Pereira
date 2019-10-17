@@ -3,13 +3,11 @@ import styled from 'styled-components'
 import axios from 'axios'
 
 const ContainerCadastro = styled.div`
-border:1px solid black;
+border:2px solid black;
 margin: 10px 100px 10px 100px;
 padding: 10px;
-background: darkgray;
+background-color: darkgray;
 `
-
-
 
 class CadastroDeUsuario extends React.Component{
     constructor(props) {
